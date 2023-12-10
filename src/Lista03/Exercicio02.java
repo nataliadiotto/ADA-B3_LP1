@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Exercicio02 {
 
-    public static double converterTemperatura(double tempAtual, String escalaAtual, String escalaFinal) {
+    public static void converterTemperatura(double tempAtual, String escalaAtual, String escalaFinal) {
         double tempFinal = 0;
         //celsius
         if (escalaAtual.equals("celsius")) {
@@ -46,14 +46,23 @@ public class Exercicio02 {
         } else {
             System.out.println("Escala atual inválida!");
         }
-        return tempFinal;
+
+        System.out.printf("%nTemperatura atual: %.2f %n" +
+                "Escala atual: %s %n" +
+                "Escala final: %s %n" +
+                "Output: %.2f %n", tempAtual, escalaAtual, escalaFinal, tempFinal);
     }
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Insira a temperatura atual: ");
+        converterTemperatura(100, "celsius", "kelvin");
+        converterTemperatura(79, "fahrenheit", "celsius");
+        converterTemperatura(373.15, "kelvin", "celsius");
+
+        //recebendo pela classe Scanner
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("\n\nInsira a temperatura atual: ");
         double tempAtual = sc.nextDouble();
 
         System.out.print("Insira a escala de medida atual (celsius | kelvin | fahrenheit): ");
@@ -62,13 +71,9 @@ public class Exercicio02 {
         String escalaFinal = sc.next().toLowerCase();
         System.out.println();
 
-        double tempFinal = converterTemperatura(tempAtual, escalaAtual, escalaFinal);
-        System.out.printf("Temperatura atual: %.2f %n" +
-                "Escala atual: %s %n" +
-                "Escala final: %s %n" +
-                "Output: %.2f", tempAtual, escalaAtual, escalaFinal, tempFinal);
+        converterTemperatura(tempAtual, escalaAtual, escalaFinal);
 
-        sc.close();
+        sc.close();*/
     }
 
 }
