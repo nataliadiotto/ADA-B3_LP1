@@ -1,33 +1,35 @@
-package ExercicioPOO_01;
+package ExercicioPOO_01.Colaboradores;
+
+import ExercicioPOO_01.Pessoa;
 
 public abstract class Funcionario extends Pessoa {
 
-    private double cargaHorariaMensal;
-    private double valorHoraTrabalhada;
+    private Double cargaHorariaMensal;
+    private Double valorHoraTrabalhada;
 
-    public Funcionario(String nome, int idade, String endereco, double cargaHorariaMensal, double valorHoraTrabalhada) {
+    public Funcionario(String nome, Integer idade, String endereco, Double cargaHorariaMensal, Double valorHoraTrabalhada) {
         super(nome, idade, endereco);
         this.cargaHorariaMensal = cargaHorariaMensal;
         this.valorHoraTrabalhada = valorHoraTrabalhada;
     }
 
-    public double getCargaHorariaMensal() {
+    public Double getCargaHorariaMensal() {
         return cargaHorariaMensal;
     }
 
-    public void setCargaHorariaMensal(double cargaHorariaMensal) {
+    public void setCargaHorariaMensal(Double cargaHorariaMensal) {
         this.cargaHorariaMensal = cargaHorariaMensal;
     }
 
-    public double getValorHoraTrabalhada() {
+    public Double getValorHoraTrabalhada() {
         return valorHoraTrabalhada;
     }
 
-    public void setValorHoraTrabalhada(double valorHoraTrabalhada) {
+    public void setValorHoraTrabalhada(Double valorHoraTrabalhada) {
         this.valorHoraTrabalhada = valorHoraTrabalhada;
     }
 
-    public abstract double calcularSalario();
+    public abstract Double calcularSalario();
     @Override
     public void imprimirInfo() {
         System.out.printf("Funcionario: %s %n" +

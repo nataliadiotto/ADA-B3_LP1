@@ -1,11 +1,13 @@
-package ExercicioPOO_01;
+package ExercicioPOO_01.Estudantes;
 
-public abstract class Aluno extends Pessoa{
+import ExercicioPOO_01.Pessoa;
+
+public abstract class Aluno extends Pessoa {
 
     private String matricula;
     private String curso;
 
-    public Aluno(String nome, int idade, String endereco, String matricula, String curso) {
+    public Aluno(String nome, Integer idade, String endereco, String matricula, String curso) {
         super(nome, idade, endereco);
         this.matricula = matricula;
         this.curso = curso;

@@ -3,10 +3,10 @@ package ExercicioPOO_01;
 public abstract class Pessoa {
 
     private String nome;
-    private int idade;
+    private Integer idade;
     private String endereco;
 
-    public Pessoa(String nome, int idade, String endereco) {
+    public Pessoa(String nome, Integer idade, String endereco) {
         this.nome = nome;
         this.idade = idade;
         this.endereco = endereco;
@@ -20,7 +20,7 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    public int getIdade() {
+    public Integer getIdade() {
         return idade;
     }
 

@@ -1,15 +1,15 @@
-package ExercicioPOO_01;
+package ExercicioPOO_01.Colaboradores;
 
 public class Atendente extends Funcionario {
 
-    private double salario;
+    private Double salario;
 
-    public Atendente(String nome, int idade, String endereco, double cargaHorariaMensal, double valorHoraTrabalhada) {
+    public Atendente(String nome, Integer idade, String endereco, Double cargaHorariaMensal, Double valorHoraTrabalhada) {
         super(nome, idade, endereco, cargaHorariaMensal, valorHoraTrabalhada);
     }
 
     @Override
-    public double calcularSalario() {
+    public Double calcularSalario() {
         salario = getCargaHorariaMensal() * getValorHoraTrabalhada() + 350;
         return salario;
     }

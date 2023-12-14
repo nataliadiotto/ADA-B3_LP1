@@ -1,10 +1,10 @@
-package ExercicioPOO_01;
+package ExercicioPOO_01.Estudantes;
 
 public class AlunoRegular extends Aluno{
 
-    private double valorMensalidade;
+    private Double valorMensalidade;
 
-    public AlunoRegular(String nome, int idade, String endereco, String matricula, String curso, double valorMensalidade) {
+    public AlunoRegular(String nome, Integer idade, String endereco, String matricula, String curso, Double valorMensalidade) {
         super(nome, idade, endereco, matricula, curso);
         this.valorMensalidade = valorMensalidade;
     }

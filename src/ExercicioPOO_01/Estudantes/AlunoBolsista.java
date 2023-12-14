@@ -1,19 +1,19 @@
-package ExercicioPOO_01;
+package ExercicioPOO_01.Estudantes;
 
-public class Bolsista extends Aluno{
+public class AlunoBolsista extends Aluno{
 
-    private double valorBolsa;
+    private Double valorBolsa;
 
-    public Bolsista(String nome, int idade, String endereco, String matricula, String curso, double valorBolsa) {
+    public AlunoBolsista(String nome, Integer idade, String endereco, String matricula, String curso, Double valorBolsa) {
         super(nome, idade, endereco, matricula, curso);
         this.valorBolsa = valorBolsa;
     }
 
-    public double getValorBolsa() {
+    public Double getValorBolsa() {
         return valorBolsa;
     }
 
-    public void setValorBolsa(double valorBolsa) {
+    public void setValorBolsa(Double valorBolsa) {
         this.valorBolsa = valorBolsa;
     }
 
